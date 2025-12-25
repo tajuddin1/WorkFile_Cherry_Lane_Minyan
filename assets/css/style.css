@@ -223,7 +223,7 @@ body.sidebar-show .toggleBtn .fa-bars {
   padding: 6px 16px;
   border: 1px solid #000000ab;
   border-radius: 30px;
-  white-space: nowrap;
+  width: 100%;
 }
 
 .btn.btn-theme-secondary:hover {
@@ -257,6 +257,12 @@ body.sidebar-show .toggleBtn .fa-bars {
 
 .floatingBtns ul {
   scrollbar-width: none;
+}
+
+.floatingBtns ul li {
+  flex-grow: 1;
+  display: flex;
+  max-width: 275px;
 }
 
 .floatingBtns::after {
@@ -510,15 +516,22 @@ footer {
   .nav-toggler {
     padding: 8px 20px 8px 10px;
   }
+
   .logo img {
     width: 230px;
   }
+
   section {
     padding: 0 10px !important;
   }
 
   .floatingBtns {
     padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .floatingBtns ul li {
+    max-width: unset;
   }
 
   .mapContent .map iframe {
