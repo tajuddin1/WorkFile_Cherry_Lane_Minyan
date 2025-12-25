@@ -510,7 +510,9 @@ footer {
   .nav-toggler {
     padding: 8px 20px 8px 10px;
   }
-
+  .logo img {
+    width: 230px;
+  }
   section {
     padding: 0 10px !important;
   }
