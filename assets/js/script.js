@@ -16,7 +16,7 @@ function parallax() {
     hero.style.transition = `unset`;
 
     // Parallax for text
-    title.style.transform = `translateY(${latestScroll * -0.2}px)`;
+    title.style.transform = `translateY(${latestScroll * -0.18}px)`;
 
     if (scrollProgress > 0.5) {
       const opacity = 1 - (scrollProgress - 0.5) * 2;
